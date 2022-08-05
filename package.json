@@ -1,0 +1,25 @@
+{
+  "name": "micro-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "build": "lerna run build",
+    "serve": "lerna run --parallel serve",
+    "clean": "lerna run --parallel clean",
+    "prepare": "lerna run npm"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": {
+    "packages": [
+      "app1",
+      "headingApp",
+      "container"
+    ]
+  },
+  "dependencies": {
+    "lerna": "^5.3.0"
+  }
+}
